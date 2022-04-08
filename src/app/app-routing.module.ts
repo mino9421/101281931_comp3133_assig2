@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+
 import { AdminViewListingComponent } from './admin-view-listing/admin-view-listing.component';
 import { HistoryComponent } from './history/history.component';
 import { ListingComponent } from './listing/listing.component';
@@ -10,14 +10,14 @@ import { SearchListingComponent } from './search-listing/search-listing.componen
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: '', component: AdminViewListingComponent },
-  { path: '', component: HistoryComponent },
-  { path: '', component: ListingComponent },
-  { path: '', component: LoginComponent },
-  { path: '', component: NewlistComponent },
-  { path: '', component: SearchListingComponent },
-  { path: '', component: SignupComponent },
+  { path: 'listing', component: ListingComponent },
+  { path: '', redirectTo: 'listing', pathMatch: 'full' },
+  { path: 'adminviewlisting', component: AdminViewListingComponent },
+  { path: 'history', component: HistoryComponent },
+  { path: 'newlist', component: NewlistComponent },
+  { path: 'searchlisting', component: SearchListingComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({

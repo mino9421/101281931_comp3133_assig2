@@ -1,1 +1,19 @@
-<p>login works!</p>
+<div fullscreen>
+    <h1>signup works!</h1>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+        <p>
+          <label>Username</label>
+          <input type="text" id="username" name="username" formControlName="username" required>
+        </p>
+
+        <p>
+          <label>Password</label>
+          <input  type="password" formControlName="password" required/>
+        </p>
+        
+        <button type="submit">Login</button>
+    </form>
+
+</div>

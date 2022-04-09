@@ -13,7 +13,6 @@ import { NewlistComponent } from './newlist/newlist.component';
 import { AdminViewListingComponent } from './admin-view-listing/admin-view-listing.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
-import { LoginsComponent } from './components/logins/logins.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -27,7 +26,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     SearchListingComponent,
     NewlistComponent,
     AdminViewListingComponent,
-    LoginsComponent
   ],
   imports: [
     BrowserModule,

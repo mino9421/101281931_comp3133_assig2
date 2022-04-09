@@ -1,1 +1,42 @@
-<p>signup works!</p>
+<div fullscreen>
+    <h1>signup works!</h1>
+
+    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+
+        <p>
+          <label>Username</label>
+          <input type="text" id="username" name="username" formControlName="username" required>
+        </p>
+
+        <p>
+          <label>First Name</label>
+          <input type="text" id="firstname" name="firstname" formControlName="firstname" required>
+        </p>
+
+        <p>
+          <label>Last Name</label>
+          <input type="text" id="lastname" name="lastname" formControlName="lastname" required>
+        </p>
+
+        <p>
+          <label>Email</label>
+          <input type="text" id="email" name="email" formControlName="email" required>
+        </p>
+
+        <p>
+          <label>Password</label>
+          <input  type="password" formControlName="password" required/>
+        </p>
+
+        <p>
+          <label>Select</label>
+          <select required formControlName="type">
+            <option value="customer">Customer</option>
+            <option value="admin">Admin</option>
+          </select>
+        </p>
+        
+        <button color="primary" type="submit">Sign Up</button>
+    </form>
+
+</div>

@@ -11,6 +11,11 @@ import { ListingComponent } from './listing/listing.component';
 import { SearchListingComponent } from './search-listing/search-listing.component';
 import { NewlistComponent } from './newlist/newlist.component';
 import { AdminViewListingComponent } from './admin-view-listing/admin-view-listing.component';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginsComponent } from './components/logins/logins.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +26,16 @@ import { AdminViewListingComponent } from './admin-view-listing/admin-view-listi
     ListingComponent,
     SearchListingComponent,
     NewlistComponent,
-    AdminViewListingComponent
+    AdminViewListingComponent,
+    LoginsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    GraphQLModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

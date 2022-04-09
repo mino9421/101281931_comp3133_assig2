@@ -13,8 +13,8 @@ import { NewlistComponent } from './newlist/newlist.component';
 import { AdminViewListingComponent } from './admin-view-listing/admin-view-listing.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
-
-import { ReactiveFormsModule } from '@angular/forms';
+import { AngularMaterialModule } from './angular-material.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     GraphQLModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

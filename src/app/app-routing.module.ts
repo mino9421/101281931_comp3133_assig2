@@ -10,8 +10,8 @@ import { SearchListingComponent } from './search-listing/search-listing.componen
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
-  { path: 'listing', component: ListingComponent },
   { path: '', redirectTo: 'listing', pathMatch: 'full' },
+  { path: 'listing', component: ListingComponent },
   { path: 'adminviewlisting', component: AdminViewListingComponent },
   { path: 'history', component: HistoryComponent },
   { path: 'newlist', component: NewlistComponent },

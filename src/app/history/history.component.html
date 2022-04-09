@@ -1,1 +1,26 @@
-<p>history works!</p>
+<h1>Booking listing id {{ listing_id }}</h1>
+
+<form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label>
+          booking_id:
+          <input formControlName="booking_id" placeholder="booking_id here">
+        </label>
+
+    </div>
+    <div>
+        <label>
+          booking_start:
+          <input type="date" formControlName="booking_start" placeholder="booking_start here">
+        </label>
+
+    </div>
+    <div>
+        <label>
+          booking_end:
+          <input type="date" formControlName="booking_end" placeholder="booking_end here">
+        </label>
+    </div>
+    
+    <button type="submit">Create Booking</button>
+</form>

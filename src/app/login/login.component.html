@@ -1,7 +1,7 @@
 <div fullscreen>
     <h1>signup works!</h1>
 
-    <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
 
         <p>
           <label>Username</label>
@@ -14,6 +14,7 @@
         </p>
         
         <button type="submit">Login</button>
+        <button [routerLink]="['/signup']">Sign Up</button>
     </form>
 
 </div>
